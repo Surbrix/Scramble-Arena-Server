@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: scramble-arena-server
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python dev_server.py
+    healthCheckPath: /
